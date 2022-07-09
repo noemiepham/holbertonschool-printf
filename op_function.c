@@ -21,21 +21,18 @@ int _print_char(va_list list)
 
 int _print_string(va_list list)
 {
-	int count = 0;
-	char *string_Array;
+	char *array = va_arg(list, char *);
+	int i;
 
-	string_Array = va_arg(list, char *);
-	if (string_Array == NULL)
+	if (array == NULL)
+	array = "(NULL)";
+	for (i = 0; array[i] != '\0'; i++)
 	{
-		string_Array = "(NULL)";
+		_putchar(array[i]);
 	}
-	while (string_Array[count] != '\0')
-	{
-		_putchar(string_Array[count]);
-		count++;
-	}
-		return (count);
+return (1);
 }
+
 /**
  * _print_percent - print %
  * @list: stocker dans list
@@ -43,6 +40,5 @@ int _print_string(va_list list)
  */
 int _print_percent(va_list list)
 {
-	(void)list;
 	return (write(1, "%", 1));
 }
