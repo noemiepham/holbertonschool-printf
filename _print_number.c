@@ -14,6 +14,9 @@ int _print_number(va_list list)
 	int myNumber = va_arg(list, int);
 	int tmp_number = myNumber;
 	int *tab = NULL;
+	int diviseur = myNumber;
+	int reste = 0;
+	int counter_size_number = 0;
 
 	if (tmp_number < 0)
 	{
@@ -25,9 +28,6 @@ int _print_number(va_list list)
 		++size_number;
 	} while (tmp_number != 0);
 	tab = malloc(size_number * sizeof(int));
-	int diviseur = myNumber;
-	int reste = 0;
-	int counter_size_number = 0;
 
 	while (diviseur > 0)
 	{
