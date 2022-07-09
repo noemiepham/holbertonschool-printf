@@ -41,5 +41,5 @@ int _print_number(va_list list)
 	{
 		_putchar(tab[--size_number] + '0');
 	}
-	return (1);
+	return (size_number);
 }
