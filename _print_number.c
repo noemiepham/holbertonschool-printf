@@ -22,7 +22,7 @@ int _print_number(va_list list)
 	{
 		_putchar('-');
 		myNumber = _abs(tmp_number);
-		count = 1; /* count signe '-' */
+		size_number = 1; /* count signe '-' */
 	}
 	do {
 		tmp_number = tmp_number / 10;
