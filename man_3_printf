@@ -1,0 +1,112 @@
+.\" man_page for _printf
+.\" Contac elizabethbehaghel@gmail.com or come.l.s@hotmail.fr
+.TH man 8 "14 mars 2022" "1.0" "_printf man page"
+
+.SH NAME
+_printf – 
+prints out the arguments passed to it to the standard output
+
+.SH SYNOPSIS
+#include "main.h"
+
+int _printf(const char *format, …)
+_printf [OPTIONS][ARGUMENTS]...
+
+.SH DESCRIPTION
+Prints ARGUMENTS as passed or according to identifier. Execute according to
+options.
+
+	SPECIAL CHARACTERS
+
+	 \\\"     double quote
+
+       	\\\\     backslash
+
+       	\\a     alert (BEL)
+
+       	\\b     backspace
+
+       	\\c     produce no further output
+
+       	\\e     escape
+
+       	\\f     form feed
+
+       	\\n     new line
+
+       	\\r     carriage return
+
+       	\\t     horizontal tab
+
+       	\\v     vertical tab
+
+	CONVERSION IDENTIFIERS
+
+		%%	percentage
+
+		%c	character
+
+		%i	integer
+
+		%d	double
+
+		%s	string
+
+		%b	the unsigned int argument is converted to binary
+
+		%u
+
+		%o
+
+		%x
+
+		%X
+
+		%S	prints the string
+
+		%p	prints values at pointer
+
+		%r	prints the reversed string
+
+		%R	prints the rot13'ed string
+
+		%l
+
+		%h
+
+	FLAGS
+
+		+
+
+		space
+
+		#
+
+		0
+
+		-
+
+.SH RETURN VALUE
+    If the function fails return (-1), otherwise return the number of
+    displayed characters (n).
+
+.SH EXAMPLES
+	_printf("Best School!"\\n);
+
+	OUTPUT
+		Best School!
+
+	int a = 9
+	_printf("\%i\\n" , a);
+
+	OUTPUT
+		9
+
+.SH SEE ALSO
+printf(3)
+
+.SH AUTHOR
+
+elizbeh - https://github.com/elizbeh/
+
+noemiepham - https://github.com/noemiepham
