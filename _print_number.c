@@ -37,9 +37,9 @@ int _print_number(va_list list)
 		counter_size_number++;
 	}
 
-	while (size_number > 0)
+	while (counter_size_number > 0)
 	{
-		_putchar(tab[--size_number] + '0');
+		_putchar(tab[--counter_size_number] + '0');
 	}
 	return (size_number);
 }
