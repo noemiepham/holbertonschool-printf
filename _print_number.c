@@ -22,9 +22,9 @@ int _print_number(va_list list)
 	{
 		_putchar('-');
 		myNumber = _abs(tmp_number);
-		diviseur = myNumber;
 		size_number = 1; /* count signe '-' */
 	}
+	diviseur = myNumber;
 	do {
 		tmp_number = tmp_number / 10;
 		++size_number;
