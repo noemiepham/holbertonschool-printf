@@ -9,7 +9,7 @@
 #include <string.h>
 
 /**
-* func_type : struct de function printf
+* struct func_type - struct de function printf
 * @t: chararcter
 * @f: pointer to fucntion
 */
@@ -25,5 +25,7 @@ int _printf(const char *format, ...);
 int _print_char(va_list list);
 int _print_string(va_list list);
 int _print_percent(va_list list);
+int _print_number(va_list list);
+int _abs(int n);
 
 #endif
