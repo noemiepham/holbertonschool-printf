@@ -25,7 +25,7 @@ int _print_string(va_list list)
 	int i;
 
 	if (array == NULL)
-	array = "(NULL)";
+	array = "(null)";
 	for (i = 0; array[i] != '\0'; i++)
 	{
 		_putchar(array[i]);
