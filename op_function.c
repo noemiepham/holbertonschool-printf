@@ -30,7 +30,7 @@ int _print_string(va_list list)
 	{
 		_putchar(array[i]);
 	}
-return (1);
+	return (i);
 }
 
 /**
