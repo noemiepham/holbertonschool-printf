@@ -14,7 +14,7 @@ int _print_number(va_list list)
 	int myNumber = va_arg(list, int);
 	int tmp_number = myNumber;
 	int *tab = NULL;
-	int diviseur = myNumber;
+	int diviseur = 0;
 	int reste = 0;
 	int counter_size_number = 0;
 
@@ -22,6 +22,7 @@ int _print_number(va_list list)
 	{
 		_putchar('-');
 		myNumber = _abs(tmp_number);
+		diviseur = myNumber;
 		size_number = 1; /* count signe '-' */
 	}
 	do {
