@@ -1,10 +1,6 @@
 #include "main.h"
 #include <stdarg.h>
 /**
-<<<<<<< HEAD
- *
- *
-=======
  * _printf - function prinft
  *  @format: pointer arugument
  * Return: print_string
@@ -18,7 +14,7 @@ int _printf(const char *format, ...)
 	va_list list;
 
 	va_start(list, format);
-<<<<<<< HEAD
+
 	if (format == NULL)
 	return (-1);
 
@@ -49,7 +45,7 @@ int _printf(const char *format, ...)
 	print_string++;
 	}
 	i++;
-=======
+
 
 	if (format == NULL)
 		return (-1);
@@ -81,7 +77,6 @@ int _printf(const char *format, ...)
 			print_string++;
 		}
 		i++;
->>>>>>> fe8a476ad61bcae3800366a599dc996458f1a705
 	}
 	va_end(list);
 	return (print_string);
