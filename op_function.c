@@ -40,5 +40,6 @@ return (1);
  */
 int _print_percent(va_list list)
 {
+	(void)list;
 	return (write(1, "%", 1));
 }
