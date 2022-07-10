@@ -10,7 +10,7 @@
 int _print_binary(va_list list)
 {
 	int size_number = 0;
-	int myNumber = va_arg(list, int);
+	unsigned int myNumber = va_arg(list, unsigned int);
 	int tmp_number = myNumber;
 	int *tab = NULL;
 	unsigned int dividende = 0;
@@ -21,7 +21,7 @@ int _print_binary(va_list list)
 		_putchar('0'); /* printf condition numero 0 */
 	if (tmp_number < 0)
 	{
-		_putchar('-');
+		_putchar('1');
 		size_number = 1; /* count signe '-' */
 	}
 	dividende = _abs(tmp_number);
