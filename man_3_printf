@@ -1,111 +1,88 @@
 .\" man_page for _printf
-.TH _prinft 1 "10 june 2022" "1.0" "_printf version 1.0"
-
+.TH _prinft 1 "10 june 2022" "version 1.0" 
 .SH NAME
-_printf – 
-prints out the arguments passed to it to the standard output
-
+_printf –  prints out the arguments passed to it to the standard output
 .SH SYNOPSIS
+
 #include "main.h"
 
 int _printf(const char *format, …)
+
 _printf [OPTIONS][ARGUMENTS]...
 
 .SH DESCRIPTION
+
 Prints ARGUMENTS as passed or according to identifier. Execute according to
 options.
 
-	SPECIAL CHARACTERS
-
-	 \\\"     double quote
-
-       	\\\\     backslash
-
+.BI "SPECIAL CHARACTERS"
+		\ double quote
+       	\\\     backslash
        	\\a     alert (BEL)
-
        	\\b     backspace
-
        	\\c     produce no further output
-
        	\\e     escape
-
        	\\f     form feed
-
        	\\n     new line
-
        	\\r     carriage return
-
        	\\t     horizontal tab
-
        	\\v     vertical tab
 
-	CONVERSION IDENTIFIERS
+.BI "CONVERSION IDENTIFIERS"
 
-		%%	percentage
+		\\%%	percentage
 
-		%c	character
+		\\%c	character
 
-		%i	integer
+		\\%i	integer
 
-		%d	double
+		\\%d	double
 
-		%s	string
+		\\%s	string
 
-		%b	the unsigned int argument is converted to binary
+		\\%b	the unsigned int argument is converted to binary
+	
+		
+		\\%S	prints the string
 
-		%u
+		\\%p	prints values at pointer
 
-		%o
+		\\%r	prints the reversed string
 
-		%x
+		\\%R	prints the rot13'ed string
 
-		%X
 
-		%S	prints the string
-
-		%p	prints values at pointer
-
-		%r	prints the reversed string
-
-		%R	prints the rot13'ed string
-
-		%l
-
-		%h
-
-	FLAGS
-
-		+
-
-		space
-
-		#
-
-		0
-
-		-
+		
 
 .SH RETURN VALUE
     If the function fails return (-1), otherwise return the number of
     displayed characters (n).
 
 .SH EXAMPLES
+
 	_printf("Best School!"\\n);
 
 	OUTPUT
+
 		Best School!
 
-	int a = 9
+	int a = 9;
+
 	_printf("\%i\\n" , a);
 
 	OUTPUT
+
 		9
 
+
 .SH SEE ALSO
+
 printf(3)
+
 
 .SH AUTHOR
 
 elizbeh - https://github.com/elizbeh/
 
 noemiepham - https://github.com/noemiepham
+
