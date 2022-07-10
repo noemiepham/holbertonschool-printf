@@ -1,5 +1,5 @@
 .\" man_page for _printf
-.TH man 8 "14 mars 2022" "1.0" "_printf man page"
+.TH _prinft 1 "10 june 2022" "1.0" "_printf version 1.0"
 
 .SH NAME
 _printf – 
