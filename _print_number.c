@@ -19,7 +19,7 @@ int _print_number(va_list list)
 	int counter_size_number = 0;
 
 	if (tmp_number == 0)
-		_putchar('0');
+		_putchar('0'); /* printf condition numero 0 */
 	if (tmp_number < 0)
 	{
 		_putchar('-');
@@ -29,21 +29,22 @@ int _print_number(va_list list)
 	diviseur = myNumber;
 	do {
 		tmp_number = tmp_number / 10;
-		++size_number;
+		++size_number; /*count size de number for create memory static */
 	} while (tmp_number != 0);
-	tab = malloc(size_number * sizeof(int));
+	tab = malloc(size_number * sizeof(int));  /* array contient de numero */
 
 	while (diviseur > 0)
 	{
 		reste = diviseur % 10;
-		tab[counter_size_number] = reste;
+		tab[counter_size_number] = reste;  /* array number */
 		diviseur = diviseur / 10;
-		counter_size_number++;
+		counter_size_number++; /* count size de number for reverstring */
 	}
 
-	while (counter_size_number > 0)
+	while (counter_size_number > 0) /*reverser array de number */
 	{
 		_putchar(tab[--counter_size_number] + '0');
 	}
+	free(tab);
 	return (size_number);
 }
