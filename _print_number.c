@@ -25,9 +25,9 @@ int _print_number(va_list list)
 	if (tmp_number < 0)
 	{
 		_putchar('-');
-		unsigned_number = _abs(tmp_number);
 		size_number = 1; /* count signe '-' */
 	}
+	unsigned_number = _abs(tmp_number);
 	diviseur = unsigned_number;
 	do {
 		tmp_number = tmp_number / 10;
