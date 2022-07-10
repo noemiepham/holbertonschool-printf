@@ -22,6 +22,8 @@ int _printf(const char *format, ...)
 		{
 			if (format[i + 1])
 			{
+				if (format[i + 1] == '\0')
+					return (-1);
 				f = get_op_func(&format[i + 1]);
 				if (f == NULL)
 				{
