@@ -22,20 +22,17 @@ int _printf(const char *format, ...)
 		{
 			if (format[i + 1])
 			{
-				if (format[i + 1] != 'c' && format[i + 1] != 's'
-				&& format[i + 1] != '%' && format[i + 1] != 'd'
-				&& format[i + 1] != 'i')
+				f = get_op_func(&format[i + 1]);
+				if (f == NULL)
 				{
 					print_string += _putchar(format[i]);
 					print_string += _putchar(format[i + 1]);
-					i++;
 				}
 				else
 				{
-					f = get_op_func(&format[i + 1]);
 					print_string += f(list);
-					i++;
 				}
+				i++;
 			}
 		}
 		else
