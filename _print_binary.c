@@ -7,7 +7,7 @@
  * @list: argument number
  * Return: 1
  */
-int _print_number(va_list list)
+int _print_binary(va_list list)
 {
 	int size_number = 0;
 	int myNumber = va_arg(list, int);
