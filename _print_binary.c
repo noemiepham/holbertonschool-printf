@@ -2,13 +2,11 @@
 #include <stdarg.h>
 #include <stdio.h>
 #include <stdlib.h>
-
 /**
  *_print_number - print number
  * @list: argument number
  * Return: 1
  */
-
 int _print_number(va_list list)
 {
 	int size_number = 0;
@@ -29,7 +27,7 @@ int _print_number(va_list list)
 	dividende = _abs(tmp_number);
 
 	do {
-		tmp_number = tmp_number / 10;
+		tmp_number = tmp_number / 2;
 		++size_number; /*count size de number for create memory static */
 	} while (tmp_number != 0);
 	tab = malloc(size_number * sizeof(int));  /* array contient les chiffres à afficher*/
@@ -39,9 +37,9 @@ int _print_number(va_list list)
 
 	while (dividende > 0)
 	{
-		reste = dividende % 10;
+		reste = dividende % 2;
 		tab[counter_size_number] = reste;  /* array number */
-		dividende = dividende / 10;
+		dividende = dividende / 2;
 		counter_size_number++; /* count size de number for reverstring */
 	}
 
