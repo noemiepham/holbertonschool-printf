@@ -11,7 +11,7 @@
 /**
 * struct func_type - struct de function printf
 * @t: chararcter
-* @f: pointer to fucntion
+* @f: pointer to function
 */
 
 typedef struct func_type
