@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stdarg.h>
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  *_print_number - print number
@@ -13,9 +14,10 @@ int _print_number(va_list list)
 	int size_number = 0;
 	int myNumber = va_arg(list, int);
 	int tmp_number = myNumber;
+	unsigned int unsigned_number = 0;
 	int *tab = NULL;
-	int diviseur = 0;
-	int reste = 0;
+	unsigned int diviseur = 0;
+	unsigned int reste = 0;
 	int counter_size_number = 0;
 
 	if (tmp_number == 0)
@@ -23,10 +25,10 @@ int _print_number(va_list list)
 	if (tmp_number < 0)
 	{
 		_putchar('-');
-		myNumber = _abs(tmp_number);
+		unsigned_number = _abs(tmp_number);
 		size_number = 1; /* count signe '-' */
 	}
-	diviseur = myNumber;
+	diviseur = unsigned_number;
 	do {
 		tmp_number = tmp_number / 10;
 		++size_number; /*count size de number for create memory static */
