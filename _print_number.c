@@ -18,6 +18,8 @@ int _print_number(va_list list)
 	int reste = 0;
 	int counter_size_number = 0;
 
+	if (tmp_number == 0)
+		_putchar('0');
 	if (tmp_number < 0)
 	{
 		_putchar('-');
