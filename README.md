@@ -39,6 +39,16 @@ Prototype: int _printf(const char *format, ...);
 Return Value
 Upon successful return, _printf returns the number of characters printed (excluding the terminating null byte used to end output to strings). If an output error is encountered, the function returns -1.
 
+Method
+```mermaid
+graph LR
+A[main.C] -- Link text --> B[printf]-- Link text --> C[get_option_function] --> D[option_function] --> A[main.c]
+putchar--> D
+abs-->D
+itoac-->D
+```
+
+
 # Format of the Argument String
 
 The format string argument is a constant character string composed of zero or more directives: ordinary characters (not %) which are copied unchanged to the output stream; and conversion specifications, each of which results in fetching zero or more subsequent arguments. Conversion specification is introduced by the character % and ends with a conversion specifier. In between the % character and conversion specifier, there may be (in order) zero or more flags, an optional minimum field width, an optional precision and an optional length modifier. The arguments must correspond with the conversion specifier, and are used in the order given.
