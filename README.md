@@ -1,4 +1,7 @@
-# printftest# printf
+[![](https://img.shields.io/badge/Holberton-red?style=for-the-badge)](https://https://www.holbertonschool-france.com/)
+![](https://img.shields.io/badge/Task-blueviolet?style=for-the-badge)
+![](https://img.shields.io/badge/Maintest-yellow?style=for-the-badge)
+# printf
 
 # General Objective!
 This project is designed to learn how a printf function works and to develop our own printf function.
