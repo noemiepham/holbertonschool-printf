@@ -1,14 +1,14 @@
 # printftest# printf
 
-![#f03c15]# General Objective![#f03c15]
+# General Objective!
 This project is designed to learn how a printf function works and to develop our own printf function.
 
-![#f03c15]# Introduction![#f03c15]
+# Introduction!
 
 A formatted output conversion C program completed as part of the low-level programming and algorithm track at Holberton School. The program is a pseudo- recreation of the C standard library function, printf.
 The _printf function was coded on an Ubuntu 14.04 LTS machine with gcc version 9.4.0
 
-![#f03c15]# Utilization![#f03c15]
+# Utilization!
 
 To use the _printf function, assuming the aforementioned dependencies have been installed, compile all .c. Files in the repository and include the header main. H with any  main function.
 
