@@ -27,6 +27,5 @@ int _print_string(va_list list);
 int _print_percent(va_list list);
 int _print_number(va_list list);
 unsigned int _abs(int n);
-int _print_binary(va_list list);
 
 #endif

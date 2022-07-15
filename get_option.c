@@ -14,7 +14,6 @@ int (*get_op_func(const char *format))(va_list)
 		{"%", _print_percent},
 		{"d", _print_number},
 		{"i", _print_number},
-		{"b", _print_binary},
 		{NULL, NULL}};
 	for (i = 0; p[i].t; i++)
 	{
