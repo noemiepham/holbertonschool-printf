@@ -3,14 +3,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- *_print_number - print number
+ *_print_binary - print number
  * @list: argument number
  * Return: 1
  */
 int _print_binary(va_list list)
 {
 	int size_number = 0;
-	unsigned int myNumber = va_arg(list, unsigned int);
+	long long int myNumber = va_arg(list, unsigned int);
 	int tmp_number = myNumber;
 	int *tab = NULL;
 	unsigned int dividende = 0;
@@ -26,15 +26,10 @@ int _print_binary(va_list list)
 	}
 	dividende = _abs(tmp_number);
 
-	do {
-		tmp_number = tmp_number / 2;
-		++size_number; /*count size de number for create memory static */
-	} while (tmp_number != 0);
-	tab = malloc(size_number * sizeof(int));  /* array contient les chiffres à afficher*/
+	tab = malloc(32);  /* array contient les chiffres à afficher*/
 
 	if (tab == NULL)
 		return (-1);
-
 	while (dividende > 0)
 	{
 		reste = dividende % 2;

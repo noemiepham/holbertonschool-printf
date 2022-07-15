@@ -32,8 +32,7 @@ int _print_number(va_list list)
 		tmp_number = tmp_number / 10;
 		++size_number; /*count size de number for create memory static */
 	} while (tmp_number != 0);
-	tab = malloc(size_number * sizeof(int));  /* array contient les chiffres à afficher*/
-
+	tab = malloc(size_number * sizeof(int));
 	if (tab == NULL)
 		return (-1);
 
